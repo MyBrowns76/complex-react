@@ -1,0 +1,432 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+html{
+  scroll-behavior: smooth;
+  
+}
+body {
+  font-family:'Open Sans', sans-serif;
+  font-weight: 300;
+  background-image: linear-gradient(to bottom right, #5f9ea0, #7fff00);
+  margin: 0;
+  padding: 0;
+
+}
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background:#00BBC9;
+  bottom: 40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align:center;
+  line-height: 50px;
+  color: whitesmoke;
+  font-size: 22px;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 4.3rem;
+}
+ .jumbotron {
+background-color: rgba(128, 128, 128, 0);
+} 
+.drop-shawdow{
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.185) ;
+}
+.lead {
+  color: whitesmoke;
+  font-size: 2.2rem;
+  font-family:sans-serif;
+}
+.btn-outline-light {
+  border-color: whitesmoke;
+  
+ 
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(245, 245, 245, 0.158);
+  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+.btn-primary, .btn-primary:hover {
+  background-color: #00BBC9;
+  border-color: greenyellow;
+  
+ }
+body::-webkit-scrollbar {
+  width: 15px; 
+              /* width of the entire scrollbar */
+} 
+
+body::-webkit-scrollbar-track {
+  background: gray;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: whitesmoke;   /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 4px solid #00BBC9;  /* creates padding around scroll thumb */
+} 
+#offcanvasNavbar {
+  background-image: linear-gradient(to bottom right,  #5f9ea0, #7fff00);
+}
+.offcanvas-header {
+  background-color: whitesmoke;
+}
+.navbar-toggler {
+  background-color: #00BBC9;
+  border: whitesmoke;
+}
+.card-img-top {
+  height: 576px;
+  width: 400px;
+}
+/* .text-muted{
+  text-decoration: none;
+}
+.card-footer{
+  text-decoration: none;
+} */
+
+ /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+           background: black; 
+     }  
+   .gotopbtn:hover {
+    color: whitesmoke;
+    color: black;
+  
+    } 
+    .card-footer:hover{
+    background-color: #00BBC9;
+    
+    } 
+    a:link { text-decoration: none; }
+
+
+    .card-columns {
+      @include media-breakpoint-only(lg) {
+        column-count: 4;
+      }
+      @include media-breakpoint-only(xl) {
+        column-count: 5;
+      }
+    }
+   
+ .pic1 {
+  background-color: #00BBC9;
+ }
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 5rem;
+  background-image: linear-gradient(to bottom right, #5f9ea0, #7fff00);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     }
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.img-wrapper > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-wrapper > .content {
+position: absolute;
+inset: 0;
+font-size: 2rem;
+padding: 1rem;
+background: rgb(255, 255, 255, .4);
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.img-wrapper > img, 
+.img-wrapper > .content {
+  transition: 200ms ease-in-out;
+}
+.img-wrapper:hover > img.blur {
+  filter: blur(5px);
+}
+.img-wrapper:hover > img.gray {
+  filter: grayscale(1);
+}
+.img-wrapper:hover > img.zoom {
+  transform: scale(1.1);
+}
+
+.img-wrapper > .content.fade {
+  opacity: 0;
+}
+
+.img-wrapper:hover > .content.fade {
+  opacity: 1;
+}
+
+.img-wrapper > .content.slide-left {
+  transform: translateX(-100%);
+}
+
+.img-wrapper:hover > .content.content.slide-left{
+  transform: translateX(0);
+}
+.img-wrapper > .content.slide-right {
+  transform: translateX(100%);
+}
+
+.img-wrapper:hover > .content.content.slide-right{
+  transform: translateX(0);
+}
+.img-wrapper > .content.slide-down {
+  transform: translateY(-100%);
+}
+
+.img-wrapper:hover > .content.content.slide-down{
+  transform: translateY(0);
+}
+.img-wrapper > .content.slide-up {
+  transform: translateY(100%);
+}
+
+.img-wrapper:hover > .content.content.slide-up{
+  transform: translateY(0);
+}
+/* social media icons styling */
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+  color: whitesmoke;
+}
+.fab {
+  color: gray;
+}
+/* footer styling */
+#footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   text-align: center;
+  /* position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
+  padding-bottom: 80px;
+  margin-top: -260px; */ 
+  
+ 
+}
+.icon{
+  margin-top:20px;
+  margin-left: 220px; 
+  position:absolute;
+  border-style:double;
+  background-color: whitesmoke;
+  /* top: 10%;
+  left: 50%; */
+  opacity: 50%;
+transition:opacity 0.5s 
+  /* transform: translate(-50%,-50%); */
+ 
+  }
+  .carousel-item{
+  width: 100%;
+  height:100%;
+  
+  }
+  .circlebounce {
+    height: 120px;
+    width: 120px;
+    margin: 250px auto 0;
+    position: relative;
+    top: -125px;
+    padding-right: 10%;
+    /* padding-left: 100%; */
+  }
+ 
+  .circle {
+    background-color:#fff;
+    height: 120px;
+    width: 120px;
+  
+    /* float: right; */
+    border: 5px solid #00baff;
+    border-radius: 100px;
+    position: absolute;
+    
+    /* bottom: 0; */
+    z-index: 1;
+    animation-name:circle;
+    animation-direction: normal;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+    -webkit-animation-name:circle;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
+    
+  }
+  .fa {
+    font-size: 42px;
+    color: #00baff;
+    bottom: 27px;
+    position: absolute;
+    left: 60%;
+    margin-left: -18px;
+    animation-name:arrow;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-play-state:running;
+    -webkit-animation-name:arrow;
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-delay:0s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:normal;
+    -webkit-animation-play-state:running;
+  }
+  .pulse {
+    margin: 0 auto;
+    border-radius: 100px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 0;
+    background-color: transparent;
+   
+    opacity: 0;
+    width: 110px;
+    height: 110px;
+    border: 10px solid #00baff;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    -ms-border-radius: 100px;
+    border-radius: 100px;
+    /* Giving Animation Function */
+    -webkit-animation: pulse 1s linear infinite 0.3s;
+    -moz-animation: pulse 1s linear infinite 0.3s; 
+    border-image: initial;
+  }
+  @keyframes arrow
+    {
+    0%   {bottom:0;}
+    75% {bottom:90px;}
+    100% {bottom:0;}
+    }
+  @-webkit-keyframes arrow
+    {
+    0%   {bottom:0;}
+    75% {bottom:90px;}
+    100% {bottom:0;}
+    }
+  @keyframes circle
+    {
+    0%   {height:120px;}
+    10% {height: 120px;}
+    50% {height: 130px;}
+    75% {height: 150px;}
+    90% {height: 130px;}
+    100% {height: 120px;}
+    }
+  @-webkit-keyframes circle
+    {
+    0%   {height:120px;}
+    10% {height: 120px;}
+    50% {height: 130px;}
+    75% {height: 150px;}
+    90% {height: 130px;}
+    100% {height: 120px;}
+    }
+  @-webkit-keyframes pulse {       
+    0% {-webkit-transform: scale(0); opacity: 0;}
+    8% {-webkit-transform: scale(0); opacity: 0;}
+    15% {-webkit-transform: scale(0.1); opacity: 1;}
+    30% {-webkit-transform: scale(0.5); opacity: 1;}
+    100% {opacity: 0; -webkit-transform: scale(1.5);}
+  }
+  @-moz-keyframes pulse {       
+    0% {-webkit-transform: scale(0); opacity: 0;}
+    8% {-webkit-transform: scale(0); opacity: 0;}
+    15% {-webkit-transform: scale(0.1); opacity: 1;}
+    30% {-webkit-transform: scale(0.5); opacity: 1;}
+    100% {opacity: 0; -webkit-transform: scale(1.5);}
+  }
+
+@media (max-width: 768px) {
+  .side-bar {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .search input {
+    width: 25rem;
+  }
+}
+
+
+/* 
+<h1 class="display-3 text-white drop-shadow">Thick & Creamy</h1>
+<p class="lead">With real meat chunks</p>
+
+<a class="btn btn-outline-light btn-lg mt-4 px-5 py-3" href="#" role="button">Pricing</a>
+
+<img src="images/hero1.png" alt="Dans Meat yogurt-1" class="img-fluid" > */
+
+
+
+
+
