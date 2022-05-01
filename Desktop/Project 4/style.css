@@ -9,13 +9,15 @@ html{
 body {
   font-family:'Open Sans', sans-serif;
   font-weight: 300;
-  background-image: linear-gradient(to bottom right, #5f9ea0, #7fff00);
+  background-image: linear-gradient(to bottom right, #999797, #F5FFFA, silver);
+ /* overflow: hidden; */
   margin: 0;
   padding: 0;
 
+
 }
 .gotopbtn{
-  position: fixed;
+  position:fixed;
   width: 50px;
   height: 50px;
   background:#00BBC9;
@@ -28,10 +30,55 @@ body {
   color: whitesmoke;
   font-size: 22px;
 }
+.carousel-item{
+  width: 100%;
+  height: 100%;
+
+
+  
+  }
+.carousel-inner{
+  background-color: gray !important;
+   width: 80%;
+   box-shadow: 10px -10px #00BBC9;
+   /* border-radius: 10px 140px ;  */
+   padding-top: 80px;
+   margin-left: 100px;
+  /* background-color: #00BBC9;
+  background-image: 
+    url("https://assets.codepen.io/226833/water.jpg"), 
+    linear-gradient(#999797, #F5FFFA, silver), 
+    linear-gradient( to left, #999797, #F5FFFA, silver);
+  background-blend-mode: 
+    difference, 
+    overlay;
+  animation-duration: 3s;
+  animation-name: background-color-animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timin-function: ease-in-out;
+  /* border-radius: 25px; */ 
+  /* border-radius: 10px 140px 30px 140px; */
+ 
+}
+
+@keyframes background-color-animation {
+  from {
+    background-color: gray;
+  }
+
+  to {
+    background-color: black;
+  }
+}
+
 
 h1 {
   font-family: 'Abril Fatface', cursive;
   font-size: 4.3rem;
+ 
+  
+  
 }
  .jumbotron {
 background-color: rgba(128, 128, 128, 0);
@@ -45,13 +92,14 @@ background-color: rgba(128, 128, 128, 0);
   font-family:sans-serif;
 }
 .btn-outline-light {
-  border-color: whitesmoke;
+  border-color: white;
+  
   
  
 }
 
 .btn-outline-light:hover {
-  background-color: rgba(245, 245, 245, 0.158);
+  background-color: whitesmoke;
   
 }
 
@@ -59,6 +107,7 @@ background-color: rgba(128, 128, 128, 0);
   display: block;
   margin-left: auto;
   margin-right: auto;
+ 
   width: 50%;
 
 }
@@ -66,12 +115,16 @@ background-color: rgba(128, 128, 128, 0);
   background-color: #00BBC9;
   border-color: greenyellow;
   
+  
  }
 body::-webkit-scrollbar {
   width: 15px; 
               /* width of the entire scrollbar */
 } 
-
+/* a:hover {
+ 
+  font-weight: bold;
+ } */
 body::-webkit-scrollbar-track {
   background: gray;        /* color of the tracking area */
 }
@@ -82,15 +135,21 @@ body::-webkit-scrollbar-thumb {
   border: 4px solid #00BBC9;  /* creates padding around scroll thumb */
 } 
 #offcanvasNavbar {
-  background-image: linear-gradient(to bottom right,  #5f9ea0, #7fff00);
+  background-image: linear-gradient(to bottom right, #999797, #F5FFFA, silver);
+ 
 }
 .offcanvas-header {
   background-color: whitesmoke;
+
 }
 .navbar-toggler {
   background-color: #00BBC9;
   border: whitesmoke;
 }
+a:hover {
+ 
+  font-weight: bold;
+ }
 .card-img-top {
   height: 576px;
   width: 400px;
@@ -144,7 +203,8 @@ body {
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 5rem;
-  background-image: linear-gradient(to bottom right, #5f9ea0, #7fff00);
+ 
+  /* background-image: linear-gradient(to bottom right, #5f9ea0, #7fff00); */
 }
 .grid {
   display: grid;
@@ -236,7 +296,9 @@ align-items: center;
 }
 /* footer styling */
 #footer {
+ 
   background-color: black;
+  
   position: fixed;
   bottom: 0;
   left: 0;
@@ -256,177 +318,169 @@ align-items: center;
   
  
 }
+
+
+.header {
+  position:fixed;
+  margin-top: -80px;
+  margin-left: -80px ;
+  margin-right: -125px;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  padding: 20px 10px;
+}
 .icon{
-  margin-top:20px;
-  margin-left: 220px; 
+  color: yellow;
+  /* margin-top:20px; */
+  margin-left: 360px; 
+ 
+  border-radius: 300px   200px;
   position:absolute;
   border-style:double;
   background-color: whitesmoke;
   /* top: 10%;
   left: 50%; */
+  transform: translate(-50%, -50%);
   opacity: 50%;
-transition:opacity 0.5s 
+  transition:opacity 0.5s 
   /* transform: translate(-50%,-50%); */
- 
+
   }
-  .carousel-item{
-  width: 100%;
-  height:100%;
+
   
+ 
+ 
+
+  .icon1{
+    color: yellow;
+    border-radius: 300px   200px;
+    margin-top: -3%;
+    margin-left: 3%; 
+    position:absolute;
+    border-style:double;
+    background-color: whitesmoke;
+    /* top: 10%;
+    left: 50%; */
+    opacity: 50%;
+    transition:opacity 0.5s; 
+    /* transform: translate(-50%,-50%); */
   }
-  .circlebounce {
-    height: 120px;
-    width: 120px;
-    margin: 250px auto 0;
+ 
+  .things > .content {
+    float: left;
+    width: 50%;
+    height: 500px;
+    -webkit-box-sizing: border-box; 
+   -moz-box-sizing: border-box;    
+    box-sizing: border-box;
     position: relative;
-    top: -125px;
-    padding-right: 10%;
-    /* padding-left: 100%; */
+    padding-left: 620px;
+    overflow: hidden;
+    text-align: right;
+    margin-top: 10px;
+    /* padding-top: -1em; */
+    
   }
- 
-  .circle {
-    background-color:#fff;
-    height: 120px;
-    width: 120px;
   
-    /* float: right; */
-    border: 5px solid #00baff;
-    border-radius: 100px;
+  .things > .content h1 {
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    top: 0;
+    bottom: 0;
+    left: 0;
+     left: -25%;
+    right: 100%; 
+    margin: auto;
     position: absolute;
-    
-    /* bottom: 0; */
-    z-index: 1;
-    animation-name:circle;
-    animation-direction: normal;
-    animation-duration:1s;
-    animation-timing-function:linear;
-    animation-delay:0s;
-    animation-iteration-count:infinite;
-    animation-direction:normal;
-    animation-play-state:running;
-    -webkit-animation-name:circle;
-    -webkit-animation-duration:1s;
-    -webkit-animation-timing-function:linear;
-    -webkit-animation-delay:0s;
-    -webkit-animation-iteration-count:infinite;
-    -webkit-animation-direction:normal;
-    -webkit-animation-play-state:running;
-    
+    height: 150px;
+    color: #89323B;
+   padding-left: 200px;
   }
-  .fa {
-    font-size: 42px;
-    color: #00baff;
-    bottom: 27px;
-    position: absolute;
-    left: 60%;
-    margin-left: -18px;
-    animation-name:arrow;
-    animation-duration:1s;
-    animation-timing-function:linear;
-    animation-delay:0s;
-    animation-iteration-count:infinite;
-    animation-direction:normal;
-    animation-play-state:running;
-    -webkit-animation-name:arrow;
-    -webkit-animation-duration:1s;
-    -webkit-animation-timing-function:linear;
-    -webkit-animation-delay:0s;
-    -webkit-animation-iteration-count:infinite;
-    -webkit-animation-direction:normal;
-    -webkit-animation-play-state:running;
-  }
-  .pulse {
+  
+  /* Arrow */
+  
+  .arrow {
+   position: relative;
     margin: 0 auto;
-    border-radius: 100px;
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    z-index: 0;
-    background-color: transparent;
+    width: 100px;
+    margin-top: 90px;
    
-    opacity: 0;
-    width: 110px;
-    height: 110px;
-    border: 10px solid #00baff;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -o-border-radius: 100px;
-    -ms-border-radius: 100px;
-    border-radius: 100px;
-    /* Giving Animation Function */
-    -webkit-animation: pulse 1s linear infinite 0.3s;
-    -moz-animation: pulse 1s linear infinite 0.3s; 
-    border-image: initial;
+   
+  
+   
   }
-  @keyframes arrow
-    {
-    0%   {bottom:0;}
-    75% {bottom:90px;}
-    100% {bottom:0;}
-    }
-  @-webkit-keyframes arrow
-    {
-    0%   {bottom:0;}
-    75% {bottom:90px;}
-    100% {bottom:0;}
-    }
-  @keyframes circle
-    {
-    0%   {height:120px;}
-    10% {height: 120px;}
-    50% {height: 130px;}
-    75% {height: 150px;}
-    90% {height: 130px;}
-    100% {height: 120px;}
-    }
-  @-webkit-keyframes circle
-    {
-    0%   {height:120px;}
-    10% {height: 120px;}
-    50% {height: 130px;}
-    75% {height: 150px;}
-    90% {height: 130px;}
-    100% {height: 120px;}
-    }
-  @-webkit-keyframes pulse {       
-    0% {-webkit-transform: scale(0); opacity: 0;}
-    8% {-webkit-transform: scale(0); opacity: 0;}
-    15% {-webkit-transform: scale(0.1); opacity: 1;}
-    30% {-webkit-transform: scale(0.5); opacity: 1;}
-    100% {opacity: 0; -webkit-transform: scale(1.5);}
-  }
-  @-moz-keyframes pulse {       
-    0% {-webkit-transform: scale(0); opacity: 0;}
-    8% {-webkit-transform: scale(0); opacity: 0;}
-    15% {-webkit-transform: scale(0.1); opacity: 1;}
-    30% {-webkit-transform: scale(0.5); opacity: 1;}
-    100% {opacity: 0; -webkit-transform: scale(1.5);}
-  }
+  
+  .arrow .curve {
+  border: 2px solid #BE5F4B;
+  border-color: transparent transparent transparent #BE5F4B;
+  height: 360px;
+  width: 1200px;
+ 
+  border-radius: 230px 0 0 150px;
+  /* padding-right: -150px; */
 
-@media (max-width: 768px) {
-  .side-bar {
-    display: none;
+
+   
+
   }
-  .search {
-    display: none;
+  
+  .arrow .point {
+  position: absolute;
+  left: 40px;
+  top: 315px;
+ 
+ 
+  
+
   }
+  
+  .arrow .point:before, .arrow .point:after {
+  border: 1px solid #BE5F4B;
+  height: 25px;
+  content: "";
+  position: absolute;
+ 
+  
+  }
+  
+  .arrow .point:before {
+  top: -11px;
+  left: -11px;
+  transform:rotate(-74deg);
+  -webkit-transform:rotate(-74deg);
+    -moz-transform:rotate(-74deg);
+    -ms-transform: rotate(-74deg);
+  
+  }
+  
+  .arrow .point:after {
+    top: -20px;
+  left: 5px;
+  transform:rotate(12deg);
+  -webkit-transform: rotate(12deg);
+    -moz-transform:rotate(12deg);
+    -ms-transform: rotate(12deg);
+   
+   
+  }
+ .card {
+  margin-right: 20px;
+ }
+h5{
+  text-align: center;
+  /* border-bottom: 2px solid #000; */
+
+   /* text-decoration: underline;       */
+  /* text-decoration-color: black; */
+  
 }
-@media (max-width: 900px) {
-  .search input {
-    width: 25rem;
-  }
+.card-footer{
+ 
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
-
-
-/* 
-<h1 class="display-3 text-white drop-shadow">Thick & Creamy</h1>
-<p class="lead">With real meat chunks</p>
-
-<a class="btn btn-outline-light btn-lg mt-4 px-5 py-3" href="#" role="button">Pricing</a>
-
-<img src="images/hero1.png" alt="Dans Meat yogurt-1" class="img-fluid" > */
-
-
-
-
-
+.card-footer{
+  text-align: center;
+}

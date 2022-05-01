@@ -7,25 +7,11 @@
 body {
    font-family: 'Roboto', sans-serif; 
     font-weight: 300;
-    background-image: linear-gradient(to bottom right, #5f9ea0, #7fff00);
-    margin: 0;
-    padding: 0;
+    background-image: linear-gradient(to bottom right, #999797, #F5FFFA, silver);
   
   }
-  .gotopbtn{
-    position:fixed;
-    width: 50px;
-    height: 50px;
-    background:#00BBC9;
-    bottom: 40px;
-    right: 50px;
-  
-    text-decoration:none;
-    text-align:center;
-    line-height: 50px;
-    color: whitesmoke;
-    font-size: 22px;
-  }
+ 
+
   
 /* header section*/
 .header {
@@ -36,17 +22,63 @@ body {
   padding: 15px;
 }
 main {
-  height: calc(100vh - 70px);
-  display: flex;
+  /* height: calc(90vh - 70px); */
+  background-color: white;
+  overflow-y: hidden;
+    display: flex;
   background-color: #f9f9f9;
 }
 /* Sidebar */ 
 .side-bar {
   height: 100%;
   width: 17%;
-  background-color: white;
-  overflow-y: hidden;
+
 }
+h1{
+  color: black;
+}
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background:#00BBC9;
+  bottom: 40px;
+  right: 50px;
+  padding-top: 10px;
+  text-decoration: none;
+  text-align:center;
+  line-height: 50px;
+  color: whitesmoke;
+  font-size: 22px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+.gotopbtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+#gotop:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black; 
+} 
+
+
+
+
+.gotopbtn:hover {
+color: whitesmoke;
+color: black;
+
+
+
+}  
 @media (max-width: 768px) {
   .side-bar {
     display: none;
@@ -95,6 +127,10 @@ input:focus {
   color: rgb(100, 100, 100);
   padding: 0 7px;
   cursor: pointer;
+  
+}
+h1{
+  font-family:serif;
 }
 .nav {
   width: 100%;
@@ -139,12 +175,20 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
+  grid-gap: 50px;
 }
+  /* flex-wrap: wrap; */
+  /* margin: auto;
+  margin-top: 200px;
+  margin-left: 10px; 
+  padding: 10px;
+ width: 200px;
+} */
 
 .video {
   width: 270px;
   margin-bottom: 30px;
+  
 }
 .thumbnail {
   width: 100%;
@@ -205,7 +249,9 @@ background-color: #00BBC9;
  
 }
 
-
+i:hover{
+  color: red;
+}
 hr {
   height: 5px;
   background-color: #686868fb;
@@ -222,6 +268,71 @@ transition:opacity 0.5s
 }
 .header{
   margin-top: 6%;
+}
+#footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   text-align: center;
+  /* position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
+  padding-bottom: 80px;
+  margin-top: -260px; */  
+}
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+  color: whitesmoke;
+}
+.fab {
+  color: gray;
+}
+
+.btn-primary, .btn-primary:hover {
+  background-color: #00BBC9;
+  border-color: greenyellow;
+  
+ } 
+body::-webkit-scrollbar {
+  width: 15px; 
+             /* width of the entire scrollbar */
+} 
+
+body::-webkit-scrollbar-track {
+  background: gray;        /* color of the tracking area */
+  
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: whitesmoke;   /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 4px solid #00BBC9;  /* creates padding around scroll thumb */
+  
+}
+.gotopbtn{
+  position:fixed;
+  width: 50px;
+  height: 50px;
+  background:#00BBC9;
+  bottom: 40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align:center;
+  line-height: 50px;
+  color: whitesmoke;
+  font-size: 22px;
 }
 /* .videos{
   padding-top: 50px;
