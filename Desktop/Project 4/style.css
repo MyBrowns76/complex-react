@@ -30,20 +30,36 @@ body {
   color: whitesmoke;
   font-size: 22px;
 }
+.btn-outline-dark {
+  border-radius:  100px / 50px;
+  size-adjust: 50px;
+}
+.btn-outline-dark1 {
+  color: black;
+ color: whitesmoke;
+ 
+ background-color: #51aaa3 ;
+}
 .carousel-item{
   width: 100%;
   height: 100%;
-
-
+}
+/* .col-12{
+  box-shadow: 5px 5px 5px 5px;
+} */
   
-  }
+  
 .carousel-inner{
-  background-color: gray !important;
-   width: 80%;
-   box-shadow: 10px -10px #00BBC9;
+  background-color: #51aaa3;
+  border-radius: 100px / 50px;
+  /* background-size: 100px, 200px; */
+   width: 60%;
+   height: 60%;
+   box-shadow:  black;
+   box-shadow: -1rem 0 3rem #000;
    /* border-radius: 10px 140px ;  */
    padding-top: 80px;
-   margin-left: 100px;
+   margin-left: 250px;
   /* background-color: #00BBC9;
   background-image: 
     url("https://assets.codepen.io/226833/water.jpg"), 
@@ -92,16 +108,16 @@ background-color: rgba(128, 128, 128, 0);
   font-family:sans-serif;
 }
 .btn-outline-light {
-  border-color: white;
+  border-color: black;
   
   
  
 }
 
-.btn-outline-light:hover {
-  background-color: whitesmoke;
+/* .btn-outline-light:hover {
+  background-color: #00BBC9;
   
-}
+} */
 
 .center {
   display: block;
@@ -131,7 +147,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: whitesmoke;   /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
+  border-radius: 50%;       /* roundness of the scroll thumb */
   border: 4px solid #00BBC9;  /* creates padding around scroll thumb */
 } 
 #offcanvasNavbar {
@@ -146,10 +162,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #00BBC9;
   border: whitesmoke;
 }
-a:hover {
+/* a:hover {
  
   font-weight: bold;
- }
+ } */
 .card-img-top {
   height: 576px;
   width: 400px;
@@ -164,6 +180,7 @@ a:hover {
  /* Handle on hover */
    ::-webkit-scrollbar-thumb:hover {
            background: black; 
+           border-radius: 50%;
      }  
    .gotopbtn:hover {
     color: whitesmoke;
@@ -171,7 +188,7 @@ a:hover {
   
     } 
     .card-footer:hover{
-    background-color: #00BBC9;
+    background-color: #51aaa3;
     
     } 
     a:link { text-decoration: none; }
@@ -333,31 +350,42 @@ align-items: center;
 }
 .icon{
   color: yellow;
-  /* margin-top:20px; */
-  margin-left: 360px; 
+  margin-top:20px;
+   margin-left: 360px; 
  
   border-radius: 300px   200px;
   position:absolute;
   border-style:double;
-  background-color: whitesmoke;
+  background-color: whitesmoke; 
   /* top: 10%;
   left: 50%; */
   transform: translate(-50%, -50%);
   opacity: 50%;
-  transition:opacity 0.5s 
-  /* transform: translate(-50%,-50%); */
+  transition:opacity 0.5s;
+  transform: translate(-50%,-50%);
 
-  }
+  }  
 
-  
- 
- 
+/* img{
+  object-fit: cover;
+} */
+/* aside {
+  width: 30%;
+  padding-right: 15px;
+  margin-right: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+} */
+
 
   .icon1{
     color: yellow;
-    border-radius: 300px   200px;
+    border-radius: 300px, 200px;
+    
     margin-top: -3%;
     margin-left: 3%; 
+    
     position:absolute;
     border-style:double;
     background-color: whitesmoke;
@@ -467,6 +495,7 @@ align-items: center;
   }
  .card {
   margin-right: 20px;
+  box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.185) ;
  }
 h5{
   text-align: center;
@@ -483,4 +512,9 @@ h5{
 }
 .card-footer{
   text-align: center;
+}
+.text-muted{
+  background-color: yellow;
+  font-weight: bolder;
+  
 }
